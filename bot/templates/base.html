@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draw Digits</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="{% static 'bot/css/bootstrap.min.css '%}"
+    />
+
+    <style>
+      .space{
+        margin-top: 50px;
+      }
+      .logo{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        max-width: 340px;
+      }
+      .item{
+        outline: none;
+        color: white;
+      }
+      .item a:hover{text-decoration: none;}
+    </style>
+  </head>
+  <body>
+
+
+      {% block content %} {% endblock content %}
+      
+      <!-- Footer -->
+      <footer class="footer">
+        <br />
+        
+        <script src="{% static 'bot/js/bootstrap.min.js' %}"></script>
+      </footer>
+    </div>
+  </body>
+</html>
